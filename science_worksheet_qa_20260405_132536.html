@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科問題</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root { --primary-color: #27ae60; } /* 理科なので緑系を基調に */
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; }
+        .problem-container { margin-bottom: 50px; page-break-inside: avoid; }
+        .problem-header { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; border-bottom: 2px solid var(--primary-color); padding-bottom: 3px; }
+        .meta-info { font-size: 0.8em; color: #7f8c8d; font-weight: normal; margin-left: 10px; }
+        .question-box { padding: 5px; }
+        .answer-text { font-weight: bold; font-size: 1.2em; color: #c0392b; margin-top: 10px; margin-bottom: 8px; }
+        .explanation-box { padding: 10px 15px; background-color: #f0fdf4; border-left: 3px solid #2ecc71; }
+        .footer-area { margin-top: 15px; page-break-inside: avoid; display: flex; justify-content: flex-end; align-items: flex-end; gap: 15px; }
+        .qr-code-box { text-align: center; }
+        .qr-code-box p { margin: 0 0 2px 0; font-size: 0.75em; color: #555; font-weight: bold; }
+        .qr-code-box img { width: 90px; height: 90px; }
+        .creation-date { font-size: 0.85em; color: #666; margin-bottom: 5px; text-align: right; }
+        @media print { body { max-width: 100%; padding: 0; } }
+    </style>
+</head>
+<body>
+    <div class="section-questions">
+
+        <div class="problem-container">
+            <div class="problem-header">
+                問 1 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 610c45...）</span>
+            </div>
+            <div class="question-box">
+                長さ $100cm$ 、重さ $50g$ の一様な太さの棒があります。左端から $30cm$ の位置を支点にして棒を水平に保つため、左端に $100g$ のおもりを吊るしました。このとき、右側に $80g$ のおもりを吊るして釣り合わせるには、左端から何 $cm$ の位置に吊るせばよいか求めなさい。
+            </div>
+            <div class="answer-text">【答え】 55cm</div>
+            <div class="explanation-box">
+                <strong style="color: var(--primary-color);">【解説】🗣️ ナニワのゼニダ先生：</strong><br>てこの釣り合いやな。棒の重さを忘れたらアカンで！それは「隠れた借金」と同じや。一様な棒の重さ $50g$ は、棒の中心（左から $50cm$ ）にかかる。支点は $30cm$ やから、棒自身の重さによる回転力は右向きに $50g \times (50 - 30) = 1000g \cdot cm$ や。左側のおもりは $100g \times 30 = 3000g \cdot cm$ やから、右側にはあと $3000 - 1000 = 2000g \cdot cm$ の力が必要や。 $80g \times x = 2000$ を解くと $x = 25cm$ 。支点から右に $25cm$ やから、左端からは $30 + 25 = 55cm$ の位置や！場所を間違えたら、追い込みかけるで！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 2 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 2d4539...）</span>
+            </div>
+            <div class="question-box">
+                長さ80cm、重さ120gの太さが一様な棒を、両端のA点とB点で支えて水平にしています。A点から20cm離れた場所に60gのおもりをつるしたとき、B点で支えている力は何gですか。
+            </div>
+            <div class="answer-text">【答え】 75g</div>
+            <div class="explanation-box">
+                <strong style="color: var(--primary-color);">【解説】🗣️ ずんだ色の妖精・ズンダ先生：</strong><br>A点を支点としてモーメントを考えるのだ！棒の重さ120gは中心（Aから40cm）にかかる。Bの力をFとすると、$F \times 80 = 60 \times 20 + 120 \times 40$。これを計算すると $80F = 6000$ で $F = 75$ gなのだ！正解したキミの頭脳は、ボクの次に輝いているのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 3 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 0018c8...）</span>
+            </div>
+            <div class="question-box">
+                重さが無視できる $80cm$ の棒があります。左端から $20cm$ の位置を支点とし、左端には $400g$ のおもりを吊るしました。支点から右に $40cm$ の位置に、ばねA（ $20g$ で $1cm$ 伸びる）とばねB（ $30g$ で $1cm$ 伸びる）を並列につなぎ、棒を支えています。このとき、2つのばねの伸びは何 $cm$ ですか。
+            </div>
+            <div class="answer-text">【答え】 4cm</div>
+            <div class="explanation-box">
+                <strong style="color: var(--primary-color);">【解説】🗣️ ナニワのゼニダ先生：</strong><br>最後は並列のばねや！借金をみんなで分担するみたいやな。まず、てこの釣り合いから考えるで。左側は $400g \times 20 = 8000g \cdot cm$ や。支点から $40cm$ の位置にある「ばねコンビ」が支えるべき力 $F$ は、 $8000 \div 40 = 200g$ や。並列のばねは、力を足し算できるんや。 $20g$ で $1cm$ 伸びるAと、 $30g$ で $1cm$ 伸びるBを合わせると、 $1cm$ 伸ばすのに $50g$ の力が必要やな。 $200g$ 分を支えるには、 $200 \div 50 = 4cm$ 伸びればええ。きっちり返済（正解）できたか？
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 4 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: fa5b3f...）</span>
+            </div>
+            <div class="question-box">
+                10gで2cmのびるばねAと、10gで3cmのびるばねBを横に並列につなぎ、その下に50gのおもりをつるしました。ばねを結ぶ棒が水平で、2本のばねが同じ長さだけのびているとき、ばねののびは何cmになりますか。
+            </div>
+            <div class="answer-text">【答え】 6cm</div>
+            <div class="explanation-box">
+                <strong style="color: var(--primary-color);">【解説】🗣️ ずんだ色の妖精・ズンダ先生：</strong><br>これは難しいのだ！1cmのばすのに、Aは5g、Bは $10 \div 3$ g必要なのだ。合わせると1cmのばすのに $5 + 10/3 = 25/3$ g必要。だから 50gなら $50 \div (25/3) = 6$ cmになるのだ！ボクの頭からずんだが溢れそうなくらいの難問なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 5 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: f0504c...）</span>
+            </div>
+            <div class="question-box">
+                自然の長さが $20cm$ で、 $20g$ のおもりをつるすと全体の長さが $24cm$ になるばねがあります。このばねをちょうど真ん中で半分に切り、そのうちの1本に $30g$ のおもりをつるしたとき、ばねの全体の長さは何 $cm$ になりますか。
+            </div>
+            <div class="answer-text">【答え】 13cm</div>
+            <div class="explanation-box">
+                <strong style="color: var(--primary-color);">【解説】🗣️ ナニワのゼニダ先生：</strong><br>ばねを半分に切るやなんて、えげつないことするなぁ。でもな、ばねを半分にすると「ばね定数」は2倍、つまり2倍硬くなるんや！元々 $20g$ で $4cm$ 伸びる（ $5g$ で $1cm$ ）ばねやったのが、半分になると $10g$ で $1cm$ しか伸びへんようになる。切り取ったばねの元の長さは $10cm$ やな。そこに $30g$ つるすんやから、伸びは $30 \div 10 = 3cm$ や。合計で $10 + 3 = 13cm$ や！短くなったからって、計算をケチったら承知せえへんで！
+            </div></div>
+    </div>
+    <div class="footer-area">
+        
+        <div class="creation-date">作成日: 2026年04月05日<br>Quiz ID: quiz_20260405_132536_5737</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>
