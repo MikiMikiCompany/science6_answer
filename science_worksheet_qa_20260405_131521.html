@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科問題</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root { --primary-color: #27ae60; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; }
+        .problem-container { margin-bottom: 50px; page-break-inside: avoid; }
+        .problem-header { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; border-bottom: 2px solid var(--primary-color); padding-bottom: 3px; }
+        .meta-info { font-size: 0.8em; color: #7f8c8d; font-weight: normal; margin-left: 10px; }
+        .question-box { padding: 5px; }
+        .answer-text { font-weight: bold; font-size: 1.2em; color: #c0392b; margin-top: 10px; margin-bottom: 8px; }
+        .explanation-box { padding: 10px 15px; background-color: #f0fdf4; border-left: 3px solid #2ecc71; }
+        .footer-area { margin-top: 15px; page-break-inside: avoid; display: flex; justify-content: flex-end; align-items: flex-end; gap: 15px; }
+        .qr-code-box { text-align: center; }
+        .qr-code-box p { margin: 0 0 2px 0; font-size: 0.75em; color: #555; font-weight: bold; }
+        .qr-code-box img { width: 90px; height: 90px; }
+        .creation-date { font-size: 0.85em; color: #666; margin-bottom: 5px; text-align: right; }
+        @media print { body { max-width: 100%; padding: 0; } }
+    </style>
+</head>
+<body>
+    <div class="section-questions">
+
+        <div class="problem-container">
+            <div class="problem-header">
+                問 1 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: fa5b3f...）</span>
+            </div>
+            <div class="question-box">
+                10gで2cmのびるばねAと、10gで3cmのびるばねBを横に並列につなぎ、その下に50gのおもりをつるしました。ばねを結ぶ棒が水平で、2本のばねが同じ長さだけのびているとき、ばねののびは何cmになりますか。
+            </div>
+            <div class="answer-text">【答え】 6cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>これは難しいのだ！1cmのばすのに、Aは5g、Bは $10 \div 3$ g必要なのだ。合わせると1cmのばすのに $5 + 10/3 = 25/3$ g必要。だから 50gなら $50 \div (25/3) = 6$ cmになるのだ！ボクの頭からずんだが溢れそうなくらいの難問なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 2 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 31ac07...）</span>
+            </div>
+            <div class="question-box">
+                重さが60g、長さ100cmで太さが一様な棒があります。左端から20cmの地点を支点にしたとき、棒を水平に保つためには、左端に何gのおもりをつるせばよいですか。
+            </div>
+            <div class="answer-text">【答え】 90g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>出たな、棒の重さ問題！一様な棒の重さは、中心（左から50cm）にかかっていると考えるのだ。支点から重心までは $50 - 20 = 30$ cm。右側の回転力は $60 \times 30 = 1800$。左端は支点から20cmだから、$1800 \div 20 = 90$ gなのだ！ボクの計算は完璧なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 3 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: bab793...）</span>
+            </div>
+            <div class="question-box">
+                30gのおもりをつるすと6cmのびるばねを3本使い、2本を並列につなぎ、その下にさらにもう1本を直列につなぎました。一番下に30gのおもりをつるしたとき、全体ののびは何cmになりますか。
+            </div>
+            <div class="answer-text">【答え】 9cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>分解して考えるのだ！上の並列部分は1本あたり15gかかるから3cmのびる。下の1本には30gがそのままかかるから6cmのびる。合計で $3 + 6 = 9$ cmなのだ！複雑に見えても、ボクにかかればずんだ餅を丸呑みするより簡単なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 4 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: b60ad4...）</span>
+            </div>
+            <div class="question-box">
+                全長60cmの、重さを無視できる棒があります。左端から50cmの地点を支点にし、左端から10cmの地点に30g、20cmの地点に20gのおもりをつるしました。右端におもりをつるして釣り合わせるには、何gのおもりが必要ですか。
+            </div>
+            <div class="answer-text">【答え】 180g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>支点からの距離が大事なのだ！30gのおもりは $50 - 10 = 40$ cm、20gのおもりは $50 - 20 = 30$ cm離れている。左の回転力は $30 \times 40 + 20 \times 30 = 1800$。右端は支点から10cmだから、$1800 \div 10 = 180$ gになるのだ！ボクのずんだを愛する力も、これくらい強力なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 5 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 2d4539...）</span>
+            </div>
+            <div class="question-box">
+                長さ80cm、重さ120gの太さが一様な棒を、両端のA点とB点で支えて水平にしています。A点から20cm離れた場所に60gのおもりをつるしたとき、B点で支えている力は何gですか。
+            </div>
+            <div class="answer-text">【答え】 75g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>A点を支点としてモーメントを考えるのだ！棒の重さ120gは中心（Aから40cm）にかかる。Bの力をFとすると、$F \times 80 = 60 \times 20 + 120 \times 40$。これを計算すると $80F = 6000$ で $F = 75$ gなのだ！正解したキミの頭脳は、ボクの次に輝いているのだ！
+            </div></div>
+    </div>
+    <div class="footer-area">
+        
+        <div class="creation-date">作成日: 2026年04月05日<br>Quiz ID: quiz_20260405_131521_7562</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>
