@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科問題</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root { --primary-color: #27ae60; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; }
+        .problem-container { margin-bottom: 50px; page-break-inside: avoid; }
+        .problem-header { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; border-bottom: 2px solid var(--primary-color); padding-bottom: 3px; }
+        .meta-info { font-size: 0.8em; color: #7f8c8d; font-weight: normal; margin-left: 10px; }
+        .question-box { padding: 5px; }
+        .answer-text { font-weight: bold; font-size: 1.2em; color: #c0392b; margin-top: 10px; margin-bottom: 8px; }
+        .explanation-box { padding: 10px 15px; background-color: #f0fdf4; border-left: 3px solid #2ecc71; }
+        .footer-area { margin-top: 15px; page-break-inside: avoid; display: flex; justify-content: flex-end; align-items: flex-end; gap: 15px; }
+        .qr-code-box { text-align: center; }
+        .qr-code-box p { margin: 0 0 2px 0; font-size: 0.75em; color: #555; font-weight: bold; }
+        .qr-code-box img { width: 90px; height: 90px; }
+        .creation-date { font-size: 0.85em; color: #666; margin-bottom: 5px; text-align: right; }
+        @media print { body { max-width: 100%; padding: 0; } }
+    </style>
+</head>
+<body>
+    <div class="section-questions">
+
+        <div class="problem-container">
+            <div class="problem-header">
+                問 1 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: f0504c...）</span>
+            </div>
+            <div class="question-box">
+                自然の長さが $20cm$ で、 $20g$ のおもりをつるすと全体の長さが $24cm$ になるばねがあります。このばねをちょうど真ん中で半分に切り、そのうちの1本に $30g$ のおもりをつるしたとき、ばねの全体の長さは何 $cm$ になりますか。
+            </div>
+            <div class="answer-text">【答え】 13cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>ばねを半分に切るやなんて、えげつないことするなぁ。でもな、ばねを半分にすると「ばね定数」は2倍、つまり2倍硬くなるんや！元々 $20g$ で $4cm$ 伸びる（ $5g$ で $1cm$ ）ばねやったのが、半分になると $10g$ で $1cm$ しか伸びへんようになる。切り取ったばねの元の長さは $10cm$ やな。そこに $30g$ つるすんやから、伸びは $30 \div 10 = 3cm$ や。合計で $10 + 3 = 13cm$ や！短くなったからって、計算をケチったら承知せえへんで！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 2 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 610c45...）</span>
+            </div>
+            <div class="question-box">
+                長さ $100cm$ 、重さ $50g$ の一様な太さの棒があります。左端から $30cm$ の位置を支点にして棒を水平に保つため、左端に $100g$ のおもりを吊るしました。このとき、右側に $80g$ のおもりを吊るして釣り合わせるには、左端から何 $cm$ の位置に吊るせばよいか求めなさい。
+            </div>
+            <div class="answer-text">【答え】 55cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>てこの釣り合いやな。棒の重さを忘れたらアカンで！それは「隠れた借金」と同じや。一様な棒の重さ $50g$ は、棒の中心（左から $50cm$ ）にかかる。支点は $30cm$ やから、棒自身の重さによる回転力は右向きに $50g \times (50 - 30) = 1000g \cdot cm$ や。左側のおもりは $100g \times 30 = 3000g \cdot cm$ やから、右側にはあと $3000 - 1000 = 2000g \cdot cm$ の力が必要や。 $80g \times x = 2000$ を解くと $x = 25cm$ 。支点から右に $25cm$ やから、左端からは $30 + 25 = 55cm$ の位置や！場所を間違えたら、追い込みかけるで！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 3 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 08f970...）</span>
+            </div>
+            <div class="question-box">
+                太さが一様で重さが無視できる $100cm$ の棒があります。左端から $20cm$ の位置を支点とし、左端には $300g$ のおもりを吊るしました。右端（左端から $100cm$ ）にはひもをつけ、そのひもを動滑車に通しておもりをつなぎました。棒を水平に保つために必要な動滑車につるしたおもりの重さは何 $g$ ですか。ただし、滑車とひもの重さは考えないものとします。
+            </div>
+            <div class="answer-text">【答え】 150g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>てこと動滑車の合わせ技や！まず、てこの左側は $300g \times 20cm = 6000g \cdot cm$ や。右側（支点から $80cm$ ）でこれを支えるには、 $6000 \div 80 = 75g$ の力でひもを引かなあかん。動滑車っちゅうのは、2本のひもでおもりを支えるから、引く力は重さの半分で済むんやな。つまり、吊るせるおもりは引く力の2倍！ $75 \times 2 = 150g$ や。商売と同じで、道具は賢く使わなあかんで！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 4 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 0018c8...）</span>
+            </div>
+            <div class="question-box">
+                重さが無視できる $80cm$ の棒があります。左端から $20cm$ の位置を支点とし、左端には $400g$ のおもりを吊るしました。支点から右に $40cm$ の位置に、ばねA（ $20g$ で $1cm$ 伸びる）とばねB（ $30g$ で $1cm$ 伸びる）を並列につなぎ、棒を支えています。このとき、2つのばねの伸びは何 $cm$ ですか。
+            </div>
+            <div class="answer-text">【答え】 4cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>最後は並列のばねや！借金をみんなで分担するみたいやな。まず、てこの釣り合いから考えるで。左側は $400g \times 20 = 8000g \cdot cm$ や。支点から $40cm$ の位置にある「ばねコンビ」が支えるべき力 $F$ は、 $8000 \div 40 = 200g$ や。並列のばねは、力を足し算できるんや。 $20g$ で $1cm$ 伸びるAと、 $30g$ で $1cm$ 伸びるBを合わせると、 $1cm$ 伸ばすのに $50g$ の力が必要やな。 $200g$ 分を支えるには、 $200 \div 50 = 4cm$ 伸びればええ。きっちり返済（正解）できたか？
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 5 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 239241...）</span>
+            </div>
+            <div class="question-box">
+                自然の長さが $10cm$ で $10g$ のおもりをつるすと $2cm$ 伸びるばねAと、自然の長さが $15cm$ で $10g$ のおもりをつるすと $3cm$ 伸びるばねBがあります。これら2つのばねを直列につなぎ、その下端に $30g$ のおもりをつるしたとき、ばね全体の長さは何 $cm$ になりますか。ただし、ばねの重さは考えないものとします。
+            </div>
+            <div class="answer-text">【答え】 40cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>まいど！ゼニダや。ばねを直列につなぐっちゅうのは、借金を重ねるようなもんや。ばねAは $10g$ で $2cm$ 伸びるから、 $30g$ つるせば $2 \times (30 \div 10) = 6cm$ 伸びる。ばねBは $10g$ で $3cm$ 伸びるから、 $30g$ で $3 \times (30 \div 10) = 9cm$ 伸びるんや。元の長さの合計は $10 + 15 = 25cm$ やから、そこに伸びの合計 $6 + 9 = 15cm$ を足して、答えは $40cm$ や！計算ミスはトイチの利息がつくで、きっちり合わせや！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 6 <span class="meta-info">（物理：ばねとてこ / 難易度: hard / qid: 31ac07...）</span>
+            </div>
+            <div class="question-box">
+                重さが60g、長さ100cmで太さが一様な棒があります。左端から20cmの地点を支点にしたとき、棒を水平に保つためには、左端に何gのおもりをつるせばよいですか。
+            </div>
+            <div class="answer-text">【答え】 90g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>出たな、棒の重さ問題！一様な棒の重さは、中心（左から50cm）にかかっていると考えるのだ。支点から重心までは $50 - 20 = 30$ cm。右側の回転力は $60 \times 30 = 1800$。左端は支点から20cmだから、$1800 \div 20 = 90$ gなのだ！ボクの計算は完璧なのだ！
+            </div></div>
+    </div>
+    <div class="footer-area">
+        
+        <div class="creation-date">作成日: 2026年04月05日<br>Quiz ID: quiz_20260405_132103_8758</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>
