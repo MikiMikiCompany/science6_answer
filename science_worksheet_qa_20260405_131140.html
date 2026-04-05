@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理科問題</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <style>
+        :root { --primary-color: #27ae60; } /* 理科なので緑系を基調に */
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; }
+        .problem-container { margin-bottom: 50px; page-break-inside: avoid; }
+        .problem-header { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; border-bottom: 2px solid var(--primary-color); padding-bottom: 3px; }
+        .meta-info { font-size: 0.8em; color: #7f8c8d; font-weight: normal; margin-left: 10px; }
+        .question-box { padding: 5px; }
+        .answer-text { font-weight: bold; font-size: 1.2em; color: #c0392b; margin-top: 10px; margin-bottom: 8px; }
+        .explanation-box { padding: 10px 15px; background-color: #f0fdf4; border-left: 3px solid #2ecc71; }
+        .footer-area { margin-top: 15px; page-break-inside: avoid; display: flex; justify-content: flex-end; align-items: flex-end; gap: 15px; }
+        .qr-code-box { text-align: center; }
+        .qr-code-box p { margin: 0 0 2px 0; font-size: 0.75em; color: #555; font-weight: bold; }
+        .qr-code-box img { width: 90px; height: 90px; }
+        .creation-date { font-size: 0.85em; color: #666; margin-bottom: 5px; text-align: right; }
+        @media print { body { max-width: 100%; padding: 0; } }
+    </style>
+</head>
+<body>
+    <div class="section-questions">
+
+        <div class="problem-container">
+            <div class="problem-header">
+                問 1 <span class="meta-info">（物理：ばねとてこ / 難易度: normal / qid: 87c3b5...）</span>
+            </div>
+            <div class="question-box">
+                10gのおもりで3cmのびるばねAと、10gのおもりで1cmのびるばねBがあります。これらを縦に直列につなぎ、一番下に10gのおもりをつるしたときの合計ののびを求めなさい。
+            </div>
+            <div class="answer-text">【答え】 4cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>縦につなぐと、両方のばねに同じ10gの力がかかるのだ！だから $3 + 1 = 4$ cmのびるのだ。ボクの足もこれくらい自由自在にのびれば、棚の高いところにあるずんだ餅に手が届くのに…くっ、悔しくないのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 2 <span class="meta-info">（物理：ばねとてこ / 難易度: normal / qid: 8fb177...）</span>
+            </div>
+            <div class="question-box">
+                自然の長さが10cmで、10gのおもりをつるすと2cmのびるばねがあります。このばねに30gのおもりをつるしたときの、ばね全体の長さを求めなさい。
+            </div>
+            <div class="answer-text">【答え】 16cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>全体の長さは「もとの長さ $+$ のび」なのだ！$10 + (2 \\times 3) = 16$ cmになるのだ！「のび」の6cmだけを答えるようなうっかり者は、ずんだ餅の「あん」だけ食べさせる刑に処すのだ！全体をしっかり見るのが天才への道なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 3 <span class="meta-info">（物理：ばねとてこ / 難易度: normal / qid: 647e75...）</span>
+            </div>
+            <div class="question-box">
+                支点から20cm離れた力点に50gの力を加えて、支点から10cm離れた作用点にあるおもりを持ち上げるとき、何gまでのおもりを持ち上げることができますか。
+            </div>
+            <div class="answer-text">【答え】 100g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>$50 \\times 20 = \text{おもり} \\times 10$ という計算なのだ！左右の「重さ $\\times$ 支点からの距離」が同じになれば釣り合うのだ！計算ミス？それはボクのせいじゃなくて、算数のルールが勝手に決まってるのが悪いのだ！答えは100gなのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 4 <span class="meta-info">（物理：ばねとてこ / 難易度: normal / qid: be6daf...）</span>
+            </div>
+            <div class="question-box">
+                長さ60cmの棒があり、左端から10cmのところに支点があります。左端に30gのおもりをつるしたとき、右端に何gのおもりをつるせば釣り合いますか。ただし棒の重さは無視します。
+            </div>
+            <div class="answer-text">【答え】 6g</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>支点からの距離をしっかり考えるのだ！左は10cm、右は $60 - 10 = 50$ cmなのだ。$30 \\times 10 = \text{おもり} \\times 50$ を解くと、答えは6gなのだ！計算が速いボクは、やっぱり宇宙一の天才妖精なのだ！
+            </div></div>
+        <div class="problem-container">
+            <div class="problem-header">
+                問 5 <span class="meta-info">（物理：ばねとてこ / 難易度: normal / qid: eb85f0...）</span>
+            </div>
+            <div class="question-box">
+                20gのおもりをつるすと4cmのびるばねを2本用意し、横に並列に並べて20gのおもり1個を支えたとき、1本のばねののびは何cmになりますか。
+            </div>
+            <div class="answer-text">【答え】 2cm</div>
+            <div class="explanation-box">
+                <strong>【解説】</strong><br>並列なら、2本のばねでおもりを仲良く分け合うのだ！1本にかかる力は10gになるから、のびは半分の2cmになるのだ。ボクが重いずんだ餅の袋を両手で持つときと同じ理屈なのだ。協力って素晴らしいのだ！
+            </div></div>
+    </div>
+    <div class="footer-area">
+        
+        <div class="creation-date">作成日: 2026年04月05日<br>Quiz ID: quiz_20260405_131140_1800</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}], throwOnError: false
+            });
+        });
+    </script>
+</body>
+</html>
